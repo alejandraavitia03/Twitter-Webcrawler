@@ -1,0 +1,9 @@
+{% extends "WebSearchTweet.html" %}
+{% block output %}
+    <div class="center">
+        <div class="center">
+            {% for out in outputs %}
+            <div class="tweet" <b>@{{ out.u_name }}</b>: {{ out.tweet }} ---- (score: {{ out.score }})</p></div>
+            {% endfor %}
+        </div>
+{% endblock %}
